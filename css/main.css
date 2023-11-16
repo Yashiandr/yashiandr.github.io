@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --blackest: #000;
+    --black: #222;
+    --white: #fff;
+    --gray: #f0f0f1;
+    --my-photo: url("../images/header/my-photo.jpg");
+    --telegram: url("../images/header/telegram.svg");
+    --site: url("../images/header/site.svg");
+    --github: url("../images/header/github.svg");
+    --mail: url("../images/header/email.svg");
+    --location: url("../images/header/location-pin.svg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 68.375rem;
+    min-height: 95.85rem;
+    margin: auto;
+    overflow-x: hidden;
+    padding: 0 3.75rem;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    border: 0.0625rem solid var(--blackest);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2.25rem 2.75rem 1rem 4.8rem;
+    border-bottom: 0.0625rem solid var(--blackest);
+    gap: 1rem;
+    background-color: var(--white);
+}
+
+.header__my-photo {
+    position: relative;
+    width: 9.25rem;
+    height: 13.25rem;
+    border-radius: 1rem;
+    box-shadow: var(--gray) 1px 0 10px 5px;
+}
+
+.header__my-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 33.4375rem;
+    gap: .375rem;
+}
+
+.header__my-contact {
+    position: relative;
+    left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.my-contact__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-contact_telegram::before {
+    position: relative;
+    left: .0625rem;
+    margin-right: .2rem;
+    content: var(--telegram);
+    vertical-align: middle;
+}
+
+.my-contact_mail::before {
+    position: relative;
+    left: .2rem;
+    margin-right: .45rem;
+    content: var(--mail);
+    vertical-align: middle;
+}
+
+.my-contact_site::before {
+    margin-right: .3rem;
+    content: var(--site);
+    vertical-align: middle;
+}
+
+.my-contact_github::before {
+    position: relative;
+    left: .25rem;
+    margin-right: .7rem;
+    content: var(--github);
+    vertical-align: middle;
+}
+
+.my-contact_location {
+    margin-top: 1.2rem;
+}
+
+.my-contact_location::before {
+    position: relative;
+    left: .2rem;
+    margin-right: .5rem;
+    content: var(--location);
+    vertical-align: middle;
+}
+
+.my-contact__item {
+    text-shadow: 0 0 0;
+    transition: text-shadow .3s ease;
+}
+
+.my-contact__item:hover {
+    text-shadow: 0 0 0.125rem var(--blackest);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 22.625rem;
+    height: 100%;
+    padding: 3.125rem 1.375rem 3.8rem 0;
+    border-right: 0.0625rem solid var(--blackest);
+    gap: 2rem;
+}
+
+.info__education {
+    display: flex;
+    flex-direction: column;
+    max-width: 18.125rem;
+    gap: .5rem;
+}
+
+.info__skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1875rem
+}
+
+.skills__item {
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid var(--blackest);
+    background-color: inherit;
+    color: inherit;
+    cursor: default;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.skills__item:hover {
+    background-color: var(--blackest);
+    color: var(--white);
+}
+
+.info__languages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.languages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.1875rem;
+}
+
+.info__tool-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0625rem
+}
+
+.info__tool-stack-block {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.tool-stack__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.tool-stack__item {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    border: .0625rem solid var(--gray);
+    border-radius: 2rem;
+    padding: .3725rem .5rem .3725rem .3725rem;
+    gap: .2rem;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+.tool-stack__item:hover {
+    background-color: var(--blackest);
+    color: var(--white);
+}
+
+.tool-stack__item:hover .img-box {
+    box-shadow: var(--gray) 0 0 .125rem .125rem;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    width: 41.8125rem;
+    padding: 3.0625rem 0 1.25rem 2.3125rem;
+    gap: 2.375rem
+}
+
+.personal__statement {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem
+}
+
+.personal__experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.experience__block-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.experience__block {
+    display: flex;
+    flex-direction: column;
+    border-bottom: .0625rem solid var(--black);
+    padding: 1.25rem 0;
+    gap: .25rem;
+}
+
+.experience__time {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: .5rem;
+    gap: .5rem;
+}
+
+.text_size-13 {
+    font-size: 13px;
+}
+
+.text_size-14 {
+    font-size: 14px;
+}
+
+.text_size-15 {
+    font-size: 15px;
+}
+
+.text_size-16 {
+    font-size: 16px;
+}
+
+.text_size-18 {
+    font-size: 18px;
+}
+
+.text_size-22 {
+    font-size: 22px;
+}
+
+.text_size-26 {
+    font-size: 26px;
+}
+
+.text_size-38 {
+    font-size: 38px;
+}
+
+.text_capitalize {
+    text-transform: capitalize;
+}
+
+.text_capitalize-fletter::first-letter {
+    text-transform: uppercase;
+}
+
+.text_regular {
+    font-weight: 400;
+}
+
+.text_medium {
+    font-weight: 500;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+.text_margin {
+    margin-bottom: .5rem;
+}
+
+.text_lh-150 {
+    line-height: 150%;
+}
+
+.picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img-box {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 100%;
+    background-color: var(--white);
+    box-shadow: var(--gray) 0 0 0 0;
+}
+
+.wrapper {
+    display: flex;
+}
