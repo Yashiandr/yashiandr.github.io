@@ -13,7 +13,11 @@
     <body>
         <main class="main">
             <header class="header text_medium">
-                <div class="header__my-photo"></div>
+                <div class="header__my-photo">
+                    <img class="header__my-photo picture"
+                         src="images/header/my-photo.jpg"
+                         loading="lazy">
+                </div>
                 <div class="header__my-info">
                     <h1 class="text_capitalize text_bold text_size-38">андряшин
                         никита</h1>
@@ -26,7 +30,7 @@
                     </p>
                 </div>
                 <div class="header__my-contact">
-                    <h2 class="text_size-22 text_bold text_capitalize">contact:
+                    <h2 class="text_size-22 text_bold text_capitalize">контакты:
                     </h2>
                     <div class="my-contact__info">
                         <a class="my-contact_telegram my-contact__item"
@@ -41,70 +45,355 @@
                     </div>
                 </div>
             </header>
-            <section class="info">
-                <div class="info__education text_size-16">
-                    <h2
-                        class="text_size-26 text_bold text_margin text_capitalize">
-                        education
-                    </h2>
-                    <p class="text_capitalize-fletter">информационная
-                        безопасность телекоммуникационных систем</p>
-                    <p class="text_bold">СПБГУТ им. М. А.
-                        Бонч-Бруевича</p>
-                    <span
-                          class="text_size-13 text_capitalize text_medium">2019-2022,
-                        санкт-петербург</span>
-                </div>
-                <div class="info__skills">
-                    <h2
-                        class="text_size-26 text_bold text_margin text_capitalize">
-                        skills
-                    </h2>
-                    <div class="skills__soft">
-                        <h3
-                            class="text_size-15 text_capitalize text_bold text_margin">
-                            soft
-                        </h3>
-                        <ul class="skills__list">
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                эмпатия
-                            </li>
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                тайм-менеджмент
-                            </li>
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                логическое мышление
-                            </li>
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                планирование
-                            </li>
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                переговоры
-                            </li>
-                            <li
-                                class="skills__item text_size-14 text_medium text_capitalize-fletter">
-                                адаптация к ситуациям
-                            </li>
-                        </ul>
+            <div class="wrapper">
+                <section class="info">
+                    <div class="info__education text_size-16">
+                        <h2
+                            class="text_size-26 text_bold text_margin text_capitalize">
+                            образование
+                        </h2>
+                        <p class="text_capitalize-fletter">информационная
+                            безопасность телекоммуникационных систем</p>
+                        <p class="text_bold">СПБГУТ им. М. А.
+                            Бонч-Бруевича</p>
+                        <span
+                              class="text_size-13 text_capitalize text_medium">2019-2022,
+                            санкт-петербург</span>
                     </div>
-                    <div class="skills__hard">
-                        <h3
-                            class="text_size-15 text_capitalize text_bold text_margin">
-                            hard
-                        </h3>
+                    <div class="info__skills">
+                        <h2
+                            class="text_size-26 text_bold text_margin text_capitalize">
+                            умения
+                        </h2>
+                        <div class="skills__soft">
+                            <h3
+                                class="text_size-15 text_capitalize text_bold text_margin">
+                                soft
+                            </h3>
+                            <ul class="skills__list text_size-14 text_medium">
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    эмпатия
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    тайм-менеджмент
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    логическое мышление
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    планирование
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    переговоры
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    адаптация к ситуациям
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills__hard">
+                            <h3
+                                class="text_size-15 text_capitalize text_bold text_margin">
+                                hard
+                            </h3>
+                            <ul class="skills__list text_size-14 text_medium">
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    разработка
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    основы верстки
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    мобильная разработка
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    тестирование
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    backend
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    frontend
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    fullstack
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    алгоритмы
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    структуры данных
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    операционные системы
+                                </li>
+                                <li
+                                    class="skills__item text_capitalize-fletter">
+                                    основы информационной безопастности
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="info__languages">
-                    <div class="languages__rus"></div>
-                    <div class="languages__eng"></div>
-                </div>
-                <div class="info__tool-stack"></div>
-            </section>
+                    <div class="info__languages">
+                        <h2
+                            class="text_size-26 text_bold text_margin text_capitalize">
+                            Языки
+                        </h2>
+                        <div class="languages__list">
+                            <div class="languages__block">
+                                <h3
+                                    class="text_size-15 text_bold text_margin text_capitalize">
+                                    русский</h3>
+                                <span
+                                      class="text_size-13 text_capitalize">родной
+                                    язык</span>
+                            </div>
+                            <div class="languages__block">
+                                <h3
+                                    class="text_size-15 text_bold text_margin text_capitalize">
+                                    английский</h3>
+                                <span
+                                      class="text_size-13 text_capitalize">чтение
+                                    технической литературы</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__tool-stack">
+                        <h2
+                            class="text_size-26 text_bold text_margin text_capitalize">
+                            tool stack
+                        </h2>
+                        <div class="info__tool-stack-block">
+                            <h3 class="text_size-15 text_bold text_capitalize">
+                                разработка</h3>
+                            <div
+                                 class="tool-stack__list text_size-13 text_medium text_capitalize">
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/python.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>python</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/django.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>django</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/nodejs.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>nodeJS</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/javascript.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>javaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__tool-stack-block">
+                            <h3 class="text_size-15 text_bold text_capitalize">
+                                UI дизайн</h3>
+                            <div
+                                 class="tool-stack__list text_size-13 text_medium text_capitalize">
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/figma.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>figma</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/photoshop.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__tool-stack-block">
+                            <h3 class="text_size-15 text_bold text_capitalize">
+                                верстка</h3>
+                            <div
+                                 class="tool-stack__list text_size-13 text_medium text_capitalize">
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/html.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/css.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__tool-stack-block">
+                            <h3 class="text_size-15 text_bold text_capitalize">
+                                инструменты разработки</h3>
+                            <div
+                                 class="tool-stack__list text_size-13 text_medium text_capitalize">
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/github.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>gitHub</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/vim.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>vim</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/vsc.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>visual studio code</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__tool-stack-block">
+                            <h3 class="text_size-15 text_bold text_capitalize">
+                                операционные системы</h3>
+                            <div
+                                 class="tool-stack__list text_size-13 text_medium text_capitalize">
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/linux.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>linux</span>
+                                </div>
+                                <div class="tool-stack__item">
+                                    <div class="img-box"><img
+                                             src="./images/info/windows.png"
+                                             alt=""
+                                             loading="lazy"
+                                             class="picture"></div>
+                                    <span>windows</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="personal">
+                    <div class="personal__statement">
+                        <h2 class="text_size-26 text_bold text_capitalize">
+                            личная характеристика</h2>
+                        <p
+                           class="text_size-15 text_lh-150 text_capitalize-fletter">
+                            Я junior
+                            developer, стремлюсь обрести навыки в frontend и
+                            backend, люблю разрабатывать рабочий код, радуюсь
+                            когда он работает =D. Знаю, что любой алгоритм можно
+                            воплотить в жизнь и в плане кода нет ничего
+                            невозомжного. Увлекаюсь походами по природе и
+                            компьютерными
+                            играми.</p>
+                    </div>
+                    <div class="personal__experience">
+                        <h2 class="text_size-26 text_bold text_capitalize">опыт
+                            работы</h2>
+                        <div class="experience__block-list">
+                            <div class="experience__block">
+                                <h3
+                                    class="text_size-18 text_bold text_capitalize">
+                                    и.о. командира отделения РХБЗ
+                                </h3>
+                                <div
+                                     class="experience__time text_bold text_capitalize">
+                                    <span class="text_bold">армия россии
+                                    </span>·
+                                    <span
+                                          class="text_medium">призыв/контракт</span>
+                                    <span class="text_size-13">июнь 2016 -
+                                        август
+                                        2019</span>
+                                </div>
+                                <p
+                                   class="text_size-15 text_capitalize-fletter text_lh-150">
+                                    Подписал контракт во время призыва,
+                                    занимался документацией роты, личными делами
+                                    солдат, осуществлял командную и
+                                    воспитательную деятельность, заведовал
+                                    средставми индивидуальной защиты. Заступал в
+                                    караул, нес службу на постах.
+                                </p>
+                            </div>
+                            <div class="experience__block">
+                                <h3
+                                    class="text_size-18 text_bold text_capitalize">
+                                    freelance backend developer
+                                </h3>
+                                <div
+                                     class="experience__time text_bold text_capitalize">
+                                    <span class="text_bold">самозанятый</span>·
+                                    <span class="text_medium">фрилансер</span>
+                                    <span class="text_size-13">2022 - по
+                                        настоящее время</span>
+                                </div>
+                                <p
+                                   class="text_size-15 text_capitalize-fletter text_lh-150">
+                                    Начал заниматься фрилансом во время учебы,
+                                    писал тесты серверной части для
+                                    некоторых проектов,
+                                    разрабатывал систему определения ближайшей
+                                    больницы работника по месту жительства для
+                                    оформления
+                                    автоматического направления с помощью Google
+                                    Maps, помогал в разаработке кода
+                                    асинхронного интернет магазина с уникальными
+                                    товарными позициями с помощью Django.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
     </body>
 

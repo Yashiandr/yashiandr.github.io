@@ -4,6 +4,7 @@
     --blackest: #000;
     --black: #222;
     --white: #fff;
+    --gray: #f0f0f1;
     --my-photo: url("../images/header/my-photo.jpg");
     --telegram: url("../images/header/telegram.svg");
     --site: url("../images/header/site.svg");
@@ -44,50 +45,32 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 74.375rem;
+    width: 68.375rem;
+    min-height: 95.85rem;
     margin: auto;
     overflow-x: hidden;
-    padding: 2.25rem 3.75rem 0;
+    padding: 0 3.75rem;
     color: var(--black);
     font-family: 'Inter', sans-serif;
     border: 0.0625rem solid var(--blackest);
 }
 
 .header {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
-    padding: 0 4rem;
+    padding: 2.25rem 2.75rem 1rem 4.8rem;
     border-bottom: 0.0625rem solid var(--blackest);
-    gap: 2rem;
+    gap: 1rem;
+    background-color: var(--white);
 }
 
 .header__my-photo {
     position: relative;
-    width: 12.25rem;
-    height: 14.25rem;
-}
-
-.header__my-photo::before {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    background: var(--my-photo) no-repeat -450px -340px;
-    content: "";
-    display: inline-block;
-    width: 12.25rem;
+    width: 9.25rem;
     height: 13.25rem;
-    border-radius: 1.5rem;
-    transition: height .7s ease,
-        width .7s ease,
-        right .7s ease,
-        bottom .7s ease;
-}
-
-.header__my-photo:hover::before {
-    bottom: 1.5rem;
-    right: 1.5rem;
-    height: 15rem;
-    width: 14rem
+    border-radius: 1rem;
+    box-shadow: var(--gray) 1px 0 10px 5px;
 }
 
 .header__my-info {
@@ -99,7 +82,7 @@ li {
 
 .header__my-contact {
     position: relative;
-    left: 10rem;
+    left: 5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -166,9 +149,10 @@ li {
     flex-direction: column;
     align-self: flex-start;
     width: 22.625rem;
-    padding: 3.125rem 1.375rem 3.75rem 0;
+    height: 100%;
+    padding: 3.125rem 1.375rem 3.8rem 0;
     border-right: 0.0625rem solid var(--blackest);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .info__education {
@@ -192,7 +176,6 @@ li {
 
 .skills__item {
     padding: 8px;
-    ;
     border-radius: 7px;
     border: 1px solid var(--blackest);
     background-color: inherit;
@@ -204,6 +187,96 @@ li {
 .skills__item:hover {
     background-color: var(--blackest);
     color: var(--white);
+}
+
+.info__languages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.languages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.1875rem;
+}
+
+.info__tool-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0625rem
+}
+
+.info__tool-stack-block {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.tool-stack__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.tool-stack__item {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    border: .0625rem solid var(--gray);
+    border-radius: 2rem;
+    padding: .3725rem .5rem .3725rem .3725rem;
+    gap: .2rem;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+.tool-stack__item:hover {
+    background-color: var(--blackest);
+    color: var(--white);
+}
+
+.tool-stack__item:hover .img-box {
+    box-shadow: var(--gray) 0 0 .125rem .125rem;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    width: 41.8125rem;
+    padding: 3.0625rem 0 1.25rem 2.3125rem;
+    gap: 2.375rem
+}
+
+.personal__statement {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem
+}
+
+.personal__experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.experience__block-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.experience__block {
+    display: flex;
+    flex-direction: column;
+    border-bottom: .0625rem solid var(--black);
+    padding: 1.25rem 0;
+    gap: .25rem;
+}
+
+.experience__time {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: .5rem;
+    gap: .5rem;
 }
 
 .text_size-13 {
@@ -260,4 +333,27 @@ li {
 
 .text_margin {
     margin-bottom: .5rem;
+}
+
+.text_lh-150 {
+    line-height: 150%;
+}
+
+.picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img-box {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 100%;
+    background-color: var(--white);
+    box-shadow: var(--gray) 0 0 0 0;
+}
+
+.wrapper {
+    display: flex;
 }
