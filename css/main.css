@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url(../fonts/bookantiqua.ttf), url(../fonts/bookantiqua_bold.ttf);
+    font-weight: normal, bold;
+    font-style: normal, normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&family=Roboto&display=swap');
+
+@media print {
+    * {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .profile__contact {
+        transform: rotate(0) !important;
+        padding: 2rem 2rem 2rem 7.3rem !important;
+    }
+
+    .contact__img {
+        transform: rotate(0) !important;
+    }
+
+    .contact__block>span {
+        color: var(--black);
+        opacity: 1 !important;
+    }
+}
+
+:root {
+    --blackest-orange: #ff8c00;
+    --black-gray: #303030;
+    --light-gray: #e4e3e3;
+    --white: #fff;
+    --black: #000;
+    --invisible: #ffffff00;
+    --visible: #ffffffF1;
+    --profile: #e4e3e3c9;
+    --personal: #eeebeb7a;
+    --item: #ebebebde;
+    --item-active: #111111c9;
+    --fire: linear-gradient(90deg, rgba(255, 27, 27, 1) 0%, rgba(244, 140, 11, 1) 74%, rgba(233, 237, 255, 1) 100%);
+    --fire-active: linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(244, 140, 11, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    --fire-active-2: linear-gradient(100deg, rgba(255, 0, 0, 1) 0%, rgba(244, 140, 11, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    --main: linear-gradient(135deg, var(--blackest-orange) 25%, var(--white));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main {
+    font-family: 'Cormorant';
+    width: 69rem;
+    max-height: 109.625rem;
+    background: var(--main);
+    color: var(--black);
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    color: var(--black);
+}
+
+.header__photo {
+    position: relative;
+    width: 25rem;
+    height: 15.625rem;
+    border-radius: 100%;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 3.125rem;
+}
+
+.profile {
+    display: flex;
+    background-color: var(--profile);
+    border-bottom: .0625rem solid var(--black);
+    border-top: .0625rem solid var(--black);
+}
+
+.profile__contact {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding: 2rem 5rem 0 4.3rem;
+    width: 20.75rem;
+    gap: .5rem;
+    transform: rotate(.25turn);
+}
+
+.profile__contact:hover .contact__block::after,
+.profile__contact:hover .contact__block::before,
+.contact__block:hover span {
+    opacity: .9;
+}
+
+.contact__block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant';
+    background: var(--fire);
+    border-radius: 1.875rem 0 1.875rem;
+    padding: .5rem 1rem;
+    gap: 1rem;
+}
+
+.contact__block span {
+    color: var(--black);
+    opacity: 0;
+    z-index: 3;
+    transition: opacity .2s;
+}
+
+.contact__block::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: var(--black);
+    background: var(--fire-active);
+    transition: opacity .4s ease .2s;
+    border-radius: 1.875rem .0 1.875rem;
+    content: "";
+}
+
+.contact__block::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: var(--fire-active-2);
+    transition: opacity .6s ease .2s;
+    border-radius: 1.875rem .0 1.875rem;
+    z-index: 1;
+    content: "";
+}
+
+.contact__block:hover .contact__img {
+    filter: invert(60%) sepia(48%) saturate(3235%) hue-rotate(359deg) brightness(101%) contrast(106%);
+}
+
+.contact__img {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: rotate(-.25turn);
+    filter: invert(0) sepia(48%) saturate(3235%) hue-rotate(359deg) brightness(101%) contrast(106%);
+    z-index: 1;
+    transition: filter .3s ease;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 47.5rem;
+    padding: 2rem 2rem 1.5rem 3rem;
+    border-left: 1px solid var(--black);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 21.8rem;
+    color: var(--black);
+    border-right: .0625rem solid var(--blackest-orange);
+    padding: 2rem 1.5625rem;
+    gap: 4rem
+}
+
+.info__education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.education__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+}
+
+.info__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: stretch;
+    gap: 1.5rem;
+}
+
+.skills__category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 20.625rem;
+    padding-top: 1rem;
+    gap: .5rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+}
+
+.skills__item {
+    flex-grow: 1;
+    padding: .3rem .5rem;
+    text-align: center;
+    background-color: var(--item);
+    color: var(--black);
+    border-radius: 1rem;
+    border: .0625rem solid var(--black);
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.skills__item:hover {
+    background-color: var(--item-active);
+    color: var(--white);
+}
+
+.info__languages {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: flex-end;
+    gap: 1.5rem
+}
+
+.languages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    max-width: 48.75rem;
+    padding: 2rem;
+    background: var(--personal);
+    border-left: .0625rem solid var(--black);
+    gap: 1.5rem;
+}
+
+.experience__block-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+
+.experience__block {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed var(--item-active);
+    gap: 1.5rem;
+}
+
+.text_size-13 {
+    font-size: 13px;
+}
+
+.text_size-15 {
+    font-size: 15px;
+}
+
+.text_size-18 {
+    font-size: 18px;
+}
+
+.text_size-25 {
+    font-size: 25px;
+}
+
+.text_size-30 {
+    font-size: 30px;
+}
+
+.text_size-50 {
+    font-size: 50px;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.text_ls-1 {
+    letter-spacing: .0625rem;
+}
+
+.text_ls-3 {
+    letter-spacing: .1875rem;
+}
+
+.text_lh-180 {
+    line-height: 180%;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.text_capitalize {
+    text-transform: capitalize;
+}
+
+.text_capitalize-fletter::first-letter {
+    text-transform: uppercase;
+}
+
+.text_white {
+    color: var(--white);
+}
+
+.cursor_default {
+    cursor: default;
+}
+
+.row-wrapper {
+    display: flex;
+}
+
+.picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 43%;
+}
+
+.stick {
+    position: relative;
+    max-width: 21.875rem;
+    align-self: stretch;
+    height: .25rem;
+    border-radius: .125rem;
+    background-color: var(--black);
+}
+
+.stick_reverse {
+    max-width: 100%;
+    background-color: var(--personal);
+}
+
+.stick::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: .25rem;
+    border-radius: 0 .125rem .125rem 0;
+    background-color: var(--white);
+    content: "";
+    transition: width .5s ease-out, border-radius .2s ease .4s;
+}
+
+.stick_reverse::before {
+    right: none;
+    left: 0;
+    width: 15%;
+    border-radius: .125rem 0 0 0.125rem;
+    background-color: var(--black);
+    transition: width .7s ease-in-out, border-radius .2s ease .6s;
+}
+
+div:hover>.stick::before {
+    width: 100%;
+    border-radius: .125rem;
+}
+
+section:hover>.stick_reverse::before {
+    width: 100%;
+    border-radius: .125rem;
+}
+
+.border {
+    border: .0625rem solid var(--black);
+}
