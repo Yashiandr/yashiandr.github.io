@@ -3,10 +3,10 @@
 :root {
     --main-color: #5A7F82;
     --main-text: #292F36;
-    --bg-image: var(--bg-rb) bottom right no-repeat, var(--bg-r) right 0 top 12.25rem no-repeat, var(--bg-l) left 0 top 23.6875rem no-repeat;
+    --bg-image: var(--bg-rb) bottom -.7rem right no-repeat, var(--bg-r) right 0 top 12.25rem no-repeat, var(--bg-l) left 0 top 23.6875rem no-repeat;
     --bg-image-size: 35%, 6.8125rem 11.4375rem, 9.9375rem 11.8125rem;
 
-    --photo: url('../image/header/photo.png');
+    --photo: url('../image/photo.png');
     --bg-rb: url('../image/Polygon.svg');
     --bg-r: url('../image/Vector-r.svg');
     --bg-l: url('../image/Vector-l.svg');
@@ -64,8 +64,9 @@ a {
     position: relative;
     width: 19.9375rem;
     height: 16.375rem;
-    background: var(--photo) var(--main-color);
-    background-size: cover;
+    background: var(--photo) var(--main-color) no-repeat;
+    background-position: 0.2rem -1rem;
+    background-size: 85%;
 }
 
 .triangle__mask {
