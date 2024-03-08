@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5a2ac512.css",
+    "main.js": "./static/js/main.42b303b5.js",
+    "static/media/strawberryIcecream.jpg": "./static/media/strawberryIcecream.9d1ec8561c768e22e689.jpg",
+    "static/media/FoglihtenNo06_076.otf": "./static/media/FoglihtenNo06_076.70bbdbc35ee94601ad49.otf",
+    "static/media/chef.jpg": "./static/media/chef.af44223813810cd84f03.jpg",
+    "static/media/cherry.jpg": "./static/media/cherry.e8a01a5e9e8786a9ce96.jpg",
+    "static/media/cakePops.jpg": "./static/media/cakePops.fe5a58c1e81f7d25dc3c.jpg",
+    "static/media/moti.jpg": "./static/media/moti.2d751c0cb375b4dadec1.jpg",
+    "static/media/snikers.jpg": "./static/media/snikers.7a8d519348f5ed5c440d.jpg",
+    "static/media/bentoStrangeberry.jpg": "./static/media/bentoStrangeberry.cbb9c5bc9c9f40679e91.jpg",
+    "static/media/cakeFlowers.jpg": "./static/media/cakeFlowers.fe75d78ddf71a3900749.jpg",
+    "static/media/chockolate.jpg": "./static/media/chockolate.8d98769fa9382cbe4763.jpg",
+    "static/media/Gilroy-Light.otf": "./static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "index.html": "./index.html",
+    "main.5a2ac512.css.map": "./static/css/main.5a2ac512.css.map",
+    "main.42b303b5.js.map": "./static/js/main.42b303b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a2ac512.css",
+    "static/js/main.42b303b5.js"
+  ]
+}
