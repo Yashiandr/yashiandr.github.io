@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.5a2ac512.css",
+    "main.css": "./static/css/main.9c881a83.css",
     "main.js": "./static/js/main.42b303b5.js",
     "static/media/strawberryIcecream.jpg": "./static/media/strawberryIcecream.9d1ec8561c768e22e689.jpg",
     "static/media/FoglihtenNo06_076.otf": "./static/media/FoglihtenNo06_076.70bbdbc35ee94601ad49.otf",
@@ -14,11 +14,11 @@
     "static/media/chockolate.jpg": "./static/media/chockolate.8d98769fa9382cbe4763.jpg",
     "static/media/Gilroy-Light.otf": "./static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "index.html": "./index.html",
-    "main.5a2ac512.css.map": "./static/css/main.5a2ac512.css.map",
+    "main.9c881a83.css.map": "./static/css/main.9c881a83.css.map",
     "main.42b303b5.js.map": "./static/js/main.42b303b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a2ac512.css",
+    "static/css/main.9c881a83.css",
     "static/js/main.42b303b5.js"
   ]
 }
